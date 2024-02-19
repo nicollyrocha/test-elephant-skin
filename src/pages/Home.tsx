@@ -158,7 +158,8 @@ export const Home = () => {
 								muted
 								className='videobg'
 							>
-								<source src={cityVideo} type='video/mp4' />
+								{/* UNCOMMENT */}
+								{/* <source src={cityVideo} type='video/mp4' /> */}
 								Your browser doesn't support HTML video.
 							</video>
 						)}
