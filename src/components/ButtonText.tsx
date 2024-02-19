@@ -5,6 +5,7 @@ export const ButtonText = ({
 	textColor,
 	icon,
 	width,
+	disabled,
 }: {
 	onClick: () => void;
 	text: string;
@@ -12,10 +13,16 @@ export const ButtonText = ({
 	textColor: string;
 	icon?: string;
 	width?: string;
+	disabled?: boolean;
 }) => {
 	return (
 		<button
-			className={`${color} p-3 rounded-full shadow-inner shadow-white ${textColor} ${width} flex flex-row justify-center items-center font-semibold`}
+			disabled={disabled}
+			className={`${
+				disabled ? 'bg-gray-300' : color
+			} p-3 rounded-full shadow-inner shadow-white ${
+				disabled ? 'text-gray-400' : textColor
+			} ${width} flex flex-row justify-center items-center font-semibold`}
 			onClick={() => onClick()}
 		>
 			<div className='flex flex-row gap-3'>

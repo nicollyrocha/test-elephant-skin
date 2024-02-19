@@ -25,14 +25,15 @@ import IconMovie from '../images/icon-movie.svg';
 import { ButtonText } from '../components/ButtonText';
 import cityVideo from '../pages/videos/city_video.mp4';
 import urbanImg from '../images/urbanImg.png';
-import TourVideo from '../pages/videos/tourVideo.mp4';
-import AmenitiesVideo from '../pages/videos/amenitiesVideo.mp4';
+/* import TourVideo from '../pages/videos/tourVideo.mp4';
+import AmenitiesVideo from '../pages/videos/amenitiesVideo.mp4'; */
 
 export const Home = () => {
 	const [openLogin, setOpenLogin] = useState(false);
 	const [openHomePageLogged, setOpenHomePageLogged] = useState(false);
 	const [openCarousel, setOpenCarousel] = useState(false);
 	const [currIndex, setCurrIndex] = useState(0);
+
 	const iconButtonSideMenu = openCarousel ? 'remove' : 'add';
 	const list = [
 		{
@@ -169,13 +170,15 @@ export const Home = () => {
 						)}
 						{list[currIndex].type === 'tour' && (
 							<video autoPlay loop muted className='videobg'>
-								<source src={TourVideo} type='video/mp4' />
+								{/* UNCOMMENT */}
+								{/* <source src={TourVideo} type='video/mp4' /> */}
 								Your browser doesn't support HTML video.
 							</video>
 						)}
 						{list[currIndex].type === 'amenities' && (
 							<video autoPlay loop muted className='videobg'>
-								<source src={AmenitiesVideo} type='video/mp4' />
+								{/* UNCOMMENT */}
+								{/* <source src={AmenitiesVideo} type='video/mp4' /> */}
 								Your browser doesn't support HTML video.
 							</video>
 						)}
