@@ -1,0 +1,69 @@
+.videobg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	animation: fade 1s linear;
+}
+video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+
+.swiper-slide {
+	width: 37rem;
+	height: 42rem;
+	position: relative;
+}
+.container {
+	max-width: 124rem;
+	padding: 4rem 1rem;
+	margin: 0 auto;
+}
+.swiper_container {
+	height: 384px;
+	padding: 2rem 0;
+	position: relative;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+html {
+	@apply overflow-hidden;
+}
+.dropdown_menu {
+	animation: growOut 300ms ease-in-out forwards;
+	transform-origin: top center;
+}
+
+@keyframes growOut {
+	0% {
+		transform: scale(0);
+	}
+	80% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
