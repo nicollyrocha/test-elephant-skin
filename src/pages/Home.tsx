@@ -23,10 +23,11 @@ import IconSurroundings from '../images/icon-surroundings.svg';
 import IconGallery from '../images/icon-gallery.svg';
 import IconMovie from '../images/icon-movie.svg';
 import { ButtonText } from '../components/ButtonText';
-import cityVideo from '../pages/videos/city_video.mp4';
 import urbanImg from '../images/urbanImg.png';
 /* import TourVideo from '../pages/videos/tourVideo.mp4';
-import AmenitiesVideo from '../pages/videos/amenitiesVideo.mp4'; */
+import AmenitiesVideo from '../pages/videos/amenitiesVideo.mp4'; 
+import cityVideo from '../pages/videos/city_video.mp4';
+*/
 
 export const Home = () => {
 	const [openLogin, setOpenLogin] = useState(false);
